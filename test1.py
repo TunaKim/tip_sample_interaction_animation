@@ -34,6 +34,5 @@ def a(i):
     return
 
 anima1 = FuncAnimation(fig, a, frames = len(data), interval=1)
-FFwriter = matplotlib.animation.FFMpegWriter()
 anima1.save('animation.gif', writer = 'pillow')
 plt.show()
